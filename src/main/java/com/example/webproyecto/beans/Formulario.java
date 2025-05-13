@@ -1,4 +1,4 @@
-package beans;
+package com.example.webproyecto.beans;
 
 import java.util.Date;
 
@@ -72,11 +72,4 @@ public class Formulario {
         this.idCarpeta = idCarpeta;
     }
 
-    public String getFormularioscol() {
-        return formularioscol;
-    }
-
-    public void setFormularioscol(String formularioscol) {
-        this.formularioscol = formularioscol;
-    }
 }

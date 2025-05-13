@@ -1,4 +1,4 @@
-package beans;
+package com.example.webproyecto.beans;
 //-------------------- roles --------------------
 public class Rol {
     private Byte idRol;

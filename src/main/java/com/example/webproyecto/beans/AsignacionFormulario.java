@@ -1,4 +1,4 @@
-package beans;
+package com.example.webproyecto.beans;
 
 import java.util.Date;
 
