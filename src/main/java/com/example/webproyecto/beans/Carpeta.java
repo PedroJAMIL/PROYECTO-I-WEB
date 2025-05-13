@@ -1,4 +1,4 @@
-package beans;
+package com.example.webproyecto.beans;
 public class Carpeta {
     private Integer idcarpeta;
     private String nombreCarpeta;

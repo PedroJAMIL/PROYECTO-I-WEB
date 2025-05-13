@@ -1,4 +1,4 @@
-package beans;
+package com.example.webproyecto.beans;
 
 public class Credencial {
     private Integer idCredenciales;
