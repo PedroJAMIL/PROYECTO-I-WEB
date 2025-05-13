@@ -1,4 +1,11 @@
-// encuestador/LoginEncuestadorServlet.java
+package com.example.webproyecto.servlet;// encuestador/LoginEncuestadorServlet.java
+import com.example.webproyecto.beans.Rol;
+import com.example.webproyecto.beans.Usuario;
+import com.example.webproyecto.daos.RolDAO;
+import com.example.webproyecto.daos.RolDAOImpl;
+import com.example.webproyecto.daos.UsuarioDAO;
+import com.example.webproyecto.daos.UsuarioDAOImpl;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;

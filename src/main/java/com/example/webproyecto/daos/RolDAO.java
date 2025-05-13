@@ -1,6 +1,7 @@
 package com.example.webproyecto.daos;
 
-import beans.Rol;
+import com.example.webproyecto.beans.Rol;
+
 import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,7 +13,7 @@ import java.util.Date;
 import java.util.List;
 
 //-------------------- Roles DAO --------------------
-interface RolDAO {
+public interface RolDAO {
     Rol getRolById(Byte idRol) throws SQLException;
 
     List<Rol> getAllRoles() throws SQLException;
@@ -26,7 +27,7 @@ interface RolDAO {
     Rol getRolByNombre(String nombreRol) throws SQLException; // Nuevo método
 }
 
-class RolDAOImpl implements RolDAO {
+public class RolDAOImpl implements RolDAO {
 
     private Connection getConnection() throws SQLException {
         // Implementa tu lógica para obtener la conexión a la base de datos
@@ -111,4 +112,3 @@ class RolDAOImpl implements RolDAO {
 
 
 }
-

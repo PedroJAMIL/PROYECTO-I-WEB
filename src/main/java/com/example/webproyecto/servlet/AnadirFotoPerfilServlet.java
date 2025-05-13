@@ -1,6 +1,10 @@
-// encuestador/AnadirFotoPerfilServlet.java
+package com.example.webproyecto.servlet;// encuestador/AnadirFotoPerfilServlet.java
+import com.example.webproyecto.daos.UsuarioDAO;
+import com.example.webproyecto.daos.UsuarioDAOImpl;
+
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
 import java.sql.Blob;
 import java.sql.SQLException;
 import javax.servlet.ServletException;

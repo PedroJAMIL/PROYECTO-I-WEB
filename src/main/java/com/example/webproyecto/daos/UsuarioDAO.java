@@ -1,13 +1,13 @@
 
 package com.example.webproyecto.daos;
+import com.example.webproyecto.beans.AsignacionFormulario;
+import com.example.webproyecto.beans.Usuario;
 
-import beans.Usuario;
-import beans.AsignacionFormulario;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-interface UsuarioDAO {
+public interface UsuarioDAO {
     Usuario getUsuarioById(Integer idUsuario) throws SQLException;
 
     List<Usuario> getAllUsuarios() throws SQLException;
@@ -39,7 +39,7 @@ interface UsuarioDAO {
     Usuario iniciarSesion(String correo, String contrasena, Byte idRol) throws SQLException; // Query 1 (Coordinador/Admin)
 }
 
-class UsuarioDAOImpl implements UsuarioDAO {
+public class UsuarioDAOImpl implements UsuarioDAO {
 
     private Connection getConnection() throws SQLException {
         // Implementa tu lógica para obtener la conexión a la base de datos

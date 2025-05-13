@@ -1,5 +1,7 @@
 package com.example.webproyecto.daos;
 
+import com.example.webproyecto.beans.Zona;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -19,7 +21,7 @@ interface ZonaDAO {
     void deleteZona(Integer idZona) throws SQLException;
 }
 
-class ZonaDAOImpl implements dao.ZonaDAO {
+class ZonaDAOImpl implements ZonaDAO {
 
     private Connection getConnection() throws SQLException {
         // Implementa tu lógica para obtener la conexión a la base de datos

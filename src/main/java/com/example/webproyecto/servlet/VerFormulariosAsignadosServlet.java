@@ -1,5 +1,10 @@
-// encuestador/VerFormulariosAsignadosServlet.java
+package com.example.webproyecto.servlet;// encuestador/VerFormulariosAsignadosServlet.java
+import com.example.webproyecto.beans.AsignacionFormulario;
+import com.example.webproyecto.daos.UsuarioDAO;
+import com.example.webproyecto.daos.UsuarioDAOImpl;
+
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.List;
 import javax.servlet.ServletException;
@@ -43,9 +48,7 @@ public class VerFormulariosAsignadosServlet extends HttpServlet {
             if (formulariosAsignados != null && !formulariosAsignados.isEmpty()) {
                 out.println("<ul>");
                 for (AsignacionFormulario asignacion : formulariosAsignados) {
-                    out.println("<li>Formulario ID: " + asignacion.getIdFormulario() +
-                            " - Nombre: " + asignacion.getNombreFormulario() +
-                            " - Descripción: " + asignacion.getDescripcion() + "</li>");
+                    out.println("<li>Formulario ID: " + asignacion.getIdFormulario() + "</li>");
                 }
                 out.println("</ul>");
             } else {

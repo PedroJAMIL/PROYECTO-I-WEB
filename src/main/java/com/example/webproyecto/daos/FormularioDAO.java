@@ -1,5 +1,6 @@
 package com.example.webproyecto.daos;
 
+
 import com.example.webproyecto.beans.Formulario;
 
 import java.sql.Blob;
@@ -145,5 +146,3 @@ class FormularioDAOImpl implements FormularioDAO {
         return formularios;
     }
 }
-
-

@@ -1,5 +1,9 @@
-// encuestador/ValidarCorreoServlet.java
+package com.example.webproyecto.servlet;// encuestador/ValidarCorreoServlet.java
+import com.example.webproyecto.daos.UsuarioDAO;
+import com.example.webproyecto.daos.UsuarioDAOImpl;
+
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

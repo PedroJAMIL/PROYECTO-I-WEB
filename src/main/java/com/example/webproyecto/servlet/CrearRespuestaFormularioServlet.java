@@ -1,5 +1,9 @@
 // encuestador/CrearRespuestaFormularioServlet.java
+import com.example.webproyecto.beans.Respuesta;
+import com.example.webproyecto.beans.SesionRespuesta;
+
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.Date;
