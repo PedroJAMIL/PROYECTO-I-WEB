@@ -1,46 +1,37 @@
-package beans;
+package com.example.webproyecto.beans;
 
 import java.util.Date;
 
 public class AsignacionFormulario {
-    private Integer idAsignacionFormularios;
-    private Integer idEncuetador;    // Foreign Key (Encuestador)
-    private Integer idFormulario;    // Foreign Key
+    private int idAsignacionFormularios;
+    private int idEncuestador;
+    private int idFormulario;
     private Date fechaAsignacion;
     private String estado;
 
-    public AsignacionFormulario() {
-    }
+    private Formulario formulario;
 
-    public AsignacionFormulario(Integer idAsignacionFormularios, Integer idEncuetador, Integer idFormulario, Date fechaAsignacion, String estado) {
-        this.idAsignacionFormularios = idAsignacionFormularios;
-        this.idEncuetador = idEncuetador;
-        this.idFormulario = idFormulario;
-        this.fechaAsignacion = fechaAsignacion;
-        this.estado = estado;
-    }
-
-    public Integer getIdAsignacionFormularios() {
+    public int getIdAsignacionFormularios() {
         return idAsignacionFormularios;
     }
 
-    public void setIdAsignacionFormularios(Integer idAsignacionFormularios) {
+    public void setIdAsignacionFormularios(int idAsignacionFormularios) {
         this.idAsignacionFormularios = idAsignacionFormularios;
     }
 
-    public Integer getIdEncuetador() {
-        return idEncuetador;
+    public int getIdEncuestador() {
+        return idEncuestador;
     }
 
-    public void setIdEncuetador(Integer idEncuetador) {
-        this.idEncuetador = idEncuetador;
+    public void setIdEncuestador(int idEncuestador) {
+        this.idEncuestador = idEncuestador;
     }
 
-    public Integer getIdFormulario() {
+    public int getIdFormulario() {
         return idFormulario;
     }
 
-    public void setIdFormulario(Integer idFormulario) {
+    public void setIdFormulario(int idFormulario) {
         this.idFormulario = idFormulario;
     }
 
@@ -59,4 +50,13 @@ public class AsignacionFormulario {
     public void setEstado(String estado) {
         this.estado = estado;
     }
+
+    public Formulario getFormulario() {
+        return formulario;
+    }
+
+    public void setFormulario(Formulario formulario) {
+        this.formulario = formulario;
+    }
+
 }

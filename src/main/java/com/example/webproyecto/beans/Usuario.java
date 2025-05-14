@@ -1,38 +1,24 @@
-package beans;
-
-import java.sql.Blob;
+package com.example.webproyecto.beans;
 
 public class Usuario {
-    private Integer idUsuario;
+    private int idUsuario;
     private String nombre;
     private String apellido;
     private String dni;
     private String direccion;
-    private Byte idRol;       // Foreign Key
-    private Integer idDistritos; // Foreign Key
-    private Integer idEstado;    // Foreign Key
-    private Blob foto;
+    private int idDistrito;
+    private int idRol;
+    private int idEstado;
+    private String urlFoto; // si usas rutas a imagen
+    // o: private byte[] foto; // si trabajas con BLOB
 
-    public Usuario() {
-    }
+    // Getters y Setters
 
-    public Usuario(Integer idUsuario, String nombre, String apellido, String dni, String direccion, Byte idRol, Integer idDistritos, Integer idEstado, Blob foto) {
-        this.idUsuario = idUsuario;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.dni = dni;
-        this.direccion = direccion;
-        this.idRol = idRol;
-        this.idDistritos = idDistritos;
-        this.idEstado = idEstado;
-        this.foto = foto;
-    }
-
-    public Integer getIdUsuario() {
+    public int getIdUsuario() {
         return idUsuario;
     }
 
-    public void setIdUsuario(Integer idUsuario) {
+    public void setIdUsuario(int idUsuario) {
         this.idUsuario = idUsuario;
     }
 
@@ -68,35 +54,35 @@ public class Usuario {
         this.direccion = direccion;
     }
 
-    public Byte getIdRol() {
+    public int getIdDistrito() {
+        return idDistrito;
+    }
+
+    public void setIdDistrito(int idDistrito) {
+        this.idDistrito = idDistrito;
+    }
+
+    public int getIdRol() {
         return idRol;
     }
 
-    public void setIdRol(Byte idRol) {
+    public void setIdRol(int idRol) {
         this.idRol = idRol;
     }
 
-    public Integer getIdDistritos() {
-        return idDistritos;
-    }
-
-    public void setIdDistritos(Integer idDistritos) {
-        this.idDistritos = idDistritos;
-    }
-
-    public Integer getIdEstado() {
+    public int getIdEstado() {
         return idEstado;
     }
 
-    public void setIdEstado(Integer idEstado) {
+    public void setIdEstado(int idEstado) {
         this.idEstado = idEstado;
     }
 
-    public Blob getFoto() {
-        return foto;
+    public String getUrlFoto() {
+        return urlFoto;
     }
 
-    public void setFoto(Blob foto) {
-        this.foto = foto;
+    public void setUrlFoto(String urlFoto) {
+        this.urlFoto = urlFoto;
     }
 }

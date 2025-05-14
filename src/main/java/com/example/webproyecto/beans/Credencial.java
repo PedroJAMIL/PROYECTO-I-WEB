@@ -1,26 +1,18 @@
-package beans;
+package com.example.webproyecto.beans;
 
 public class Credencial {
-    private Integer idCredenciales;
+    private int idCredenciales;
     private String correo;
     private String contrasenha;
-    private Integer idUsuario; // Foreign Key
+    private int idUsuario;
 
-    public Credencial() {
-    }
+    // Getters y Setters
 
-    public Credencial(Integer idCredenciales, String correo, String contrasenha, Integer idUsuario) {
-        this.idCredenciales = idCredenciales;
-        this.correo = correo;
-        this.contrasenha = contrasenha;
-        this.idUsuario = idUsuario;
-    }
-
-    public Integer getIdCredenciales() {
+    public int getIdCredenciales() {
         return idCredenciales;
     }
 
-    public void setIdCredenciales(Integer idCredenciales) {
+    public void setIdCredenciales(int idCredenciales) {
         this.idCredenciales = idCredenciales;
     }
 
@@ -40,11 +32,11 @@ public class Credencial {
         this.contrasenha = contrasenha;
     }
 
-    public Integer getIdUsuario() {
+    public int getIdUsuario() {
         return idUsuario;
     }
 
-    public void setIdUsuario(Integer idUsuario) {
+    public void setIdUsuario(int idUsuario) {
         this.idUsuario = idUsuario;
     }
 }
